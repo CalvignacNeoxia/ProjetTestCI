@@ -1,0 +1,31 @@
+name: Swift
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+  
+    runs-on: macos-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+      - name: CocoaPod Install
+        run: pod install
+      - name: Build
+        uses: mxcl/xcodebuild@v2
+        with: 
+          scheme: P10_Application_de_recette
+          workspace: P10_Application_de_recette.xcworkspace
+          platform: iOS
+      - name: Exécuter les tests
+        run: xcodebuild test -workspace P10_Application_de_recette.xcworkspace  -scheme 'P10_Application_de_recette' -destination 'platform=iOS Simulator,OS=16.2,name=iPhone 12 Pro Max'
