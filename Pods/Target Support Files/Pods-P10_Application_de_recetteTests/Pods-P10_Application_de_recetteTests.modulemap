@@ -1,0 +1,6 @@
+framework module Pods_P10_Application_de_recetteTests {
+  umbrella header "Pods-P10_Application_de_recetteTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

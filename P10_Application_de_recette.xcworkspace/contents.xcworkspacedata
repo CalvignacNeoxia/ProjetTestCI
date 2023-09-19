@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/charlescalvignac/Documents/cours/P10/Code/P10_Application_de_recette/Production Files/Model/RecipeSaved+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/charlescalvignac/Documents/cours/P10/Code/P10_Application_de_recette/Production Files/Model/RecipeSaved+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:P10_Application_de_recette.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

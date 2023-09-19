@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="CellIngredientController" customModule="P10_Application_de_recette" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeL-oH-YA4">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="79"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdL-WP-pVu">
+                                <rect key="frame" x="19" y="29" width="277" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hD8-xA-4S0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIm-wf-XBR">
+                                <rect key="frame" x="321" y="19.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Sns-Tz-xRb"/>
+                                    <constraint firstAttribute="width" constant="40" id="rFi-O3-FzS"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2156862745" green="0.20000000000000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sIm-wf-XBR" secondAttribute="trailing" constant="10" id="EJV-pi-m8I"/>
+                            <constraint firstItem="sIm-wf-XBR" firstAttribute="centerY" secondItem="rdL-WP-pVu" secondAttribute="centerY" id="H9h-l2-JQw"/>
+                            <constraint firstAttribute="bottom" secondItem="rdL-WP-pVu" secondAttribute="bottom" constant="29" id="HPM-pK-LyS"/>
+                            <constraint firstItem="sIm-wf-XBR" firstAttribute="leading" secondItem="rdL-WP-pVu" secondAttribute="trailing" constant="25" id="uvv-6n-T2q"/>
+                            <constraint firstItem="rdL-WP-pVu" firstAttribute="leading" secondItem="KeL-oH-YA4" secondAttribute="leading" constant="19" id="vSy-ga-mME"/>
+                            <constraint firstItem="rdL-WP-pVu" firstAttribute="top" secondItem="KeL-oH-YA4" secondAttribute="top" constant="29" id="xT4-ka-oKD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KeL-oH-YA4" secondAttribute="bottom" id="LYk-Td-Pbc"/>
+                    <constraint firstItem="KeL-oH-YA4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aWp-rr-Ndj"/>
+                    <constraint firstItem="KeL-oH-YA4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oXu-Yx-MC6"/>
+                    <constraint firstAttribute="trailing" secondItem="KeL-oH-YA4" secondAttribute="trailing" id="vau-p3-QEO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btn" destination="sIm-wf-XBR" id="6Ln-GF-8ju"/>
+                <outlet property="lbl" destination="rdL-WP-pVu" id="9EK-vd-hUb"/>
+            </connections>
+            <point key="canvasLocation" x="93.478260869565219" y="65.290178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
